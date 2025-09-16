@@ -16,9 +16,9 @@ server.listen(3000, () => {
 //С помощью модуля fs создай файл hello.txt с текстом "Hello, Node.js", а потом прочитай его и выведи в консоль
 const fs = require("fs");
 
-fs.writeFileSync("test.txt", "Привет, это запись в файл!");
+fs.writeFileSync("hello.txt", "Hello, Node.js");
 
-let data = fs.readFileSync("test.txt", "utf-8");
+let data = fs.readFileSync("hello.txt", "utf-8");
 console.log("Содержимое файла:", data);
 
 //http://localhost:3000
